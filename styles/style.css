@@ -9,33 +9,36 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/*div, img, section, p, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+div, img, section, p, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
   border: 1px solid red;
-}*/
+}
 
-h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, img {
+/*h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, img {
   margin: 0;
   padding: 0;
-}
+}*/
 
 
 .header {
+  background-color: #f2f2f2;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   flex-direction: row;
   position: relative;
   padding-left: 64px;
+  min-height: 600px;
+  max-height: 765px;
 
 }
 
 .header__title {
-  display: flex;
-  flex-direction: row;
-  width: 730px;
-  align-items: center;
+  max-width: 730px;
+  margin: 0;
+  padding: 0;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
@@ -43,12 +46,14 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, img {
 }
 
 .header__subtitle {
-  width: 388px;
+  max-width: 388px;
   position: absolute;
   bottom: 30px;
   line-height: 25px;
   font-size: 18px;
   z-index: 1;
+  margin: 0;
+  padding: 0;
 }
 
 .header__link {
@@ -87,10 +92,12 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, img {
 
 .description {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px auto 0;
 }
 
 .two-columns {
-  margin: 100px auto 100px;
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -98,6 +105,8 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, img {
 }
 
 .two-columns__brief {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   font-weight: normal;
   line-height: 1.2;
@@ -110,21 +119,21 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, img {
   min-width: 784px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
-.two-columns__main-text_paragraph {
+.two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
 }
 
-.two-columns__main-text_paragraph:last-of-type {
+.two-columns__paragraph:last-of-type {
   margin-bottom: 0;
 }
 
-.two-columns__main-text_paragraph_span {
+.two-columns__span-accent {
   font-weight: bold;
 }
 
@@ -132,9 +141,12 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 100px auto 100px;
 }
 
 .section-title {
+  margin: 0;
+  padding: 0;
   width: 60%;
   line-height: 1.15;
   font-size: 60px;
@@ -148,6 +160,8 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, img {
 }
 
 .section-subtitle {
+  margin: 20px 0 0 0;
+  padding: 0;
   width: 60%;
   line-height: 34px;
   font-size: 24px;
@@ -156,12 +170,8 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, img {
 }
 
 .section-subtitle_theme_dark  {
-  color: #f2f2f2;
+  color: white;
   z-index: 2;
-}
-
-.margin-top_20px {
-  margin-top: 20px;
 }
 
 .table {
@@ -183,22 +193,29 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, img {
 
 .table__cell_theme_dark {
   width: 200px;
-  color: #f2f2f2;
+  color: white;
   margin-right: 0;
   margin-top: 80px;
 }
 
-.table__cell_heading {
+.table__heading {
+  margin: 0;
+  padding: 0;
   line-height: 1.15;
   font-size: 24px;
 }
 
-.table__cell_text {
+.table__text {
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style: none;
   line-height: 1.2;
   font-size: 18px;
 }
 
 .feynman {
+  padding-top: 100px;
+  background-color: #f2f2f2;
   display: flex;
   position: relative;
   background-image: url(../images/feynman.png);
@@ -211,8 +228,9 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, img {
 }
 
 .feynman__title {
-  margin-top: 100px;
-  width: 648px;
+  margin: 0;
+  padding: 0;
+  max-width: 648px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
@@ -224,7 +242,8 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, img {
   font-size: 36px;
   font-weight: normal;
   text-align: center;
-  margin-top: 70px;
+  margin: 70px 0 0 0;
+  padding: 0;
 }
 
 .feynman__link {
@@ -242,7 +261,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, img {
   padding: 90px 0 90px;
   display: flex;
   position: relative;
-  background-repeat: no-repeat;
   background-position: bottom left;
   background-size: 867px 637px;
   flex-direction: column;
@@ -250,7 +268,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, img {
   overflow: hidden;
 }
 
-.kaufman__back-image {
+.kaufman__triangle {
   position: absolute;
   right: -210px;
   top: 0;
