@@ -9,16 +9,6 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-div, img, section, p, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
-  border: 1px solid red;
-}
-
-/*h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, img {
-  margin: 0;
-  padding: 0;
-}*/
-
-
 .header {
   background-color: #f2f2f2;
   height: 100vh;
@@ -156,7 +146,7 @@ div, img, section, p, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
 
 .section-title_theme_dark {
   color: #f2f2f2;
-/* z-index: 2; было нужно для абсолютного позиционирования треугольника*/
+  z-index: 1;
 }
 
 .section-subtitle {
@@ -171,6 +161,7 @@ div, img, section, p, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
 
 .section-subtitle_theme_dark  {
   color: white;
+  z-index: 1;
 }
 
 .table {
@@ -183,6 +174,7 @@ div, img, section, p, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
 
 .table_theme_dark {
   color: white;
+  z-index: 1;
 }
 
 .table__cell {
@@ -271,8 +263,6 @@ div, img, section, p, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
   overflow: hidden;
 }
 
-/* данный класс был написан для абсолютного позиционирования треугольника
-
 .kaufman__triangle {
   position: absolute;
   right: -210px;
@@ -281,56 +271,63 @@ div, img, section, p, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
   width: 877px;
   height: 877px;
 }
-*/
+
 
 .footer {
+  padding: 60px 0 40px 0;
   background: #1f1f1f;
-  min-height: 350px;
-  flex-direction: row;
+  /*min-height: 350px;*/
+  flex-direction: column;
   display: flex;
   align-items: center;
 }
 
 .footer__columns {
-  margin: 60px auto 40px;
   width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.footer__column_content_copyright {
-  flex-basis: 711px;
-  min-height: 240px;
-  position: relative;
-}
-
 .logo_place_footer {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 183px;
   height: 35px;
 }
 
 .footer__author {
-  position: absolute;
-  bottom: 18px;
-  left: 0;
-  margin-top: 18px;
+  margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
   color: #f2f2f2;
 }
 
-.footer__column_content_info {
+.footer__column {
+  min-height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
+.footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-basis: 711px;
+}
+
+.footer__column_content_info {
+
+}
+
+.footer__column_content_social {
+
+}
+
 .footer__column-heading {
+  margin: 0 0 20px 0;
+  padding: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
@@ -338,28 +335,37 @@ div, img, section, p, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
 }
 
 .footer__column-links {
+  margin: 0 0 16px 0;
+  padding: 0;
+  list-style: none;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   text-decoration: none;
   color: #f2f2f2;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+}
+
+.footer__column-link {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #f2f2f2;
 }
 
 .footer__social-icon {
   height: 16px;
   width: 16px;
-  margin-right: 10px;
+  margin: auto 10px auto 0;
 }
 
-.footer__column_content_social {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
+
 
 
 
