@@ -156,7 +156,7 @@ div, img, section, p, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
 
 .section-title_theme_dark {
   color: #f2f2f2;
-  z-index: 2;
+/* z-index: 2; было нужно для абсолютного позиционирования треугольника*/
 }
 
 .section-subtitle {
@@ -171,7 +171,6 @@ div, img, section, p, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
 
 .section-subtitle_theme_dark  {
   color: white;
-  z-index: 2;
 }
 
 .table {
@@ -183,8 +182,8 @@ div, img, section, p, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
 }
 
 .table_theme_dark {
-  z-index: 2;
-  }
+  color: white;
+}
 
 .table__cell {
   width: 250px;
@@ -193,8 +192,6 @@ div, img, section, p, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
 
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
-  margin-right: 0;
   margin-top: 80px;
 }
 
@@ -211,6 +208,10 @@ div, img, section, p, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
   list-style: none;
   line-height: 1.2;
   font-size: 18px;
+}
+
+.table__text:first-child {
+  margin: 0;
 }
 
 .feynman {
@@ -258,15 +259,19 @@ div, img, section, p, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
 
 .kaufman {
   background: #1f1f1f;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: top right -210px;
+  background-size: 877px 877px;
   padding: 90px 0 90px;
   display: flex;
   position: relative;
-  background-position: bottom left;
-  background-size: 867px 637px;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
 }
+
+/* данный класс был написан для абсолютного позиционирования треугольника
 
 .kaufman__triangle {
   position: absolute;
@@ -276,6 +281,7 @@ div, img, section, p, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
   width: 877px;
   height: 877px;
 }
+*/
 
 .footer {
   background: #1f1f1f;
@@ -291,7 +297,6 @@ div, img, section, p, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
 
 .footer__column_content_copyright {
