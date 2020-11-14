@@ -1,0 +1,7 @@
+.footer__social-icon {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin: auto 10px auto 0;
+  vertical-align: middle;
+}
