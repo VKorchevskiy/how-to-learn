@@ -61,9 +61,9 @@
 @import "../blocks/footer/__columns/footer__columns.css";
 @import "../blocks/footer/__column/footer__column.css";
 @import "../blocks/footer/__author/footer__author.css";
-@import "../blocks/footer/__columns/_content/footer__column_content_copyright.css";
-@import "../blocks/footer/__columns/_content/footer__column_content_info.css";
-@import "../blocks/footer/__columns/_content/footer__column_content_social.css";
+@import "../blocks/footer/__column/_content/footer__column_content_copyright.css";
+@import "../blocks/footer/__column/_content/footer__column_content_info.css";
+@import "../blocks/footer/__column/_content/footer__column_content_social.css";
 @import "../blocks/footer/__column-heading/footer__column-heading.css";
 @import "../blocks/footer/__column-links/footer__column-links.css";
 @import "../blocks/footer/__column-link/footer__column-link.css";
