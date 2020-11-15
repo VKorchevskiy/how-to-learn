@@ -2,6 +2,8 @@
 
 @import "../blocks/page/page.css";
 
+@import "../blocks/opacity/opacity.css";
+
 @import "../blocks/header/header.css";
 @import "../blocks/header/__title/header__title.css";
 @import "../blocks/header/__subtitle/header__subtitle.css";
