@@ -59,6 +59,15 @@
 @import "../blocks/table/__text/table__text.css";
 
 @import "../blocks/khan/khan.css";
+@import "../blocks/khan/__container/khan__container.css";
+@import "../blocks/khan/__author/khan__author.css";
+@import "../blocks/khan/__title/khan__title.css";
+@import "../blocks/khan/__quote/khan__quote.css";
+@import "../blocks/khan/__quote-author/khan__quote-author.css";
+@import "../blocks/khan/__quote-author-subline/khan__quote-author-subline.css";
+@import "../blocks/khan/__book-container/khan__book-container.css";
+@import "../blocks/khan/__book-pic/khan__book-pic.css";
+@import "../blocks/khan/__buy-link/khan__buy-link.css";
 
 @import "../blocks/kaufman/kaufman.css";
 @import "../blocks/kaufman/__triangle/kaufman__triangle.css";
@@ -79,7 +88,7 @@
 
 
 
-/* div, section, h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, main, span, nav, img {
+div, section, h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, main, span, nav, img {
   border: 1px solid red;
-} */
+}
 
